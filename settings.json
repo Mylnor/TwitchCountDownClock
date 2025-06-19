@@ -1,0 +1,14 @@
+{
+    "timeleft": 9000,
+    "font": "Berlin Sans FB Demi",
+    "fontfile": "font.ttf",
+    "timedayscolor": "#2DE497",
+    "timelefttextcolor": "#FFFFFF",
+    "timecolor": "#2DE497",
+    "timeseparatorcolor": "#2DE497",
+    "matchingedgecolor": "#000000",
+    "channel": "mylnor",
+    "listento": ["mylnor", "mylnorbot"],
+    "logdateformat": "%Y-%m-%d",
+    "bonustimeplus": 450
+}
