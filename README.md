@@ -15,7 +15,8 @@ Twitch.json contains the appid and secret to let the app listen to chat commands
 
 # Usage
 1. Rename _twitch.json to twitch.json
-2. get your appid and secret from https://dev.twitch.tv/console
+2. Create a directory called logs in the dir where the .exe resides
+3. get your appid and secret from https://dev.twitch.tv/console
 - call it something like yourstreamercountdownclock or something
 - OAuth url should point to https://localhost:17563/
 - Category is chatbot
