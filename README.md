@@ -6,7 +6,13 @@ Settings.json contain some visualisation options to change the colors of your cl
 Time.json has the time left on the clock, this gets edited by the app every second
 Twitch.json contains the appid and secret to let the app listen to chat commands
 
-# Installation
+# Compiling
+1. Create a venv for this app; python -m venv TwitchCountDownClock
+2. Activate it .\Scripts\activate
+3. download any missing libraries with pip install <NAME> for twitch its called twitchAPI
+4. compile it to a .exe; python -m PyInstaller .\app.py
+
+# Usage
 1. Rename _twitch.json to twitch.json
 2. get your appid and secret from https://dev.twitch.tv/console
 - call it something like kaicountdownclock or something
