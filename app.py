@@ -57,14 +57,14 @@ async def on_message(msg: ChatMessage):
     if msg.user.name in BOT_LISTEN_TO:
         global addTime
         global bonusTime
-        if msg.text == '!clockadd60':
+        if msg.text == '!add60':
             addTime += 3600
             timeStamp = int(time.time()) 
             currentLogFile["manual"][timeStamp] = {
                 "add": "60"
             }
             writeLogFile()
-        elif msg.text == '!clockadd30':
+        elif msg.text == '!add30':
             addTime += 1800
             timeStamp = int(time.time()) 
             
@@ -72,14 +72,14 @@ async def on_message(msg: ChatMessage):
                 "add": "30"
             }
             writeLogFile()
-        elif msg.text == '!clockadd15':
+        elif msg.text == '!add15':
             addTime += 900
             timeStamp = int(time.time()) 
             currentLogFile["manual"][timeStamp] = {
                 "add": "15"
             }
             writeLogFile()
-        if msg.text == '!clockadd5':
+        if msg.text == '!add5':
             addTime += 450
             timeStamp = int(time.time()) 
             currentLogFile["manual"][timeStamp] = {
@@ -121,7 +121,7 @@ def writeLogFile():
     global logFileDate
     global currentLogFile
     logFileDate = time.strftime(logFileDateFormat)
-    logPath = 'Logs/' + logFileDate + '.json'
+    logPath = 'logs/' + logFileDate + '.json'
     with open(logPath, "w") as outfile:
         outfile.write(json.dumps(currentLogFile))
 
