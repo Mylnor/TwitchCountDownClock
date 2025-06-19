@@ -11,6 +11,7 @@ Twitch.json contains the appid and secret to let the app listen to chat commands
 2. Activate it .\Scripts\activate
 3. download any missing libraries with pip install <NAME> for twitch its called twitchAPI
 4. compile it to a .exe; python -m PyInstaller .\app.py
+5. dont forget to copy all the config files and fonts to the same dir as the .exe else it starts complaining
 
 # Usage
 1. Rename _twitch.json to twitch.json
