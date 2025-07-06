@@ -7,8 +7,8 @@
     "timecolor": "#2DE497",
     "timeseparatorcolor": "#2DE497",
     "matchingedgecolor": "#000000",
-    "channel": "mylnor",
-    "listento": ["mylnor", "mylnorbot"],
+    "channel": "kailellexd",
+    "listento": ["kailellexd", "oasisbot_"],
     "logdateformat": "%Y-%m-%d",
     "bonustimeplus": 450
 }
