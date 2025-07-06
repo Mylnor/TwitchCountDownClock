@@ -79,6 +79,16 @@ async def on_message(msg: ChatMessage):
                 "add": "15"
             }
             writeLogFile()
+        elif msg.text[:8] == '!addtime':
+            userValue = int(msg.text[9:])
+            secondsToMinutes = userValue/60
+            addTime += userValue
+            
+            timeStamp = int(time.time()) 
+            currentLogFile["manual"][timeStamp] = {
+                "add": str(secondsToMinutes)
+            }
+            writeLogFile()
         if msg.text == '!add5':
             addTime += 450
             timeStamp = int(time.time()) 
